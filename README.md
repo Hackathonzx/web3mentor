@@ -1,6 +1,6 @@
-# Gamified Web3 Onboarding Platform
+# Gamified Web3 Onboarding Platform - web3mentor
 
-SoulPortal is an incentive-based learning portal designed to onboard users into the world of Web3 through gamified quests, mentorship programs, and decentralized governance. Leveraging Soulbound Tokens (SBTs) as immutable proof of achievement, SoulPortal rewards users for learning, engaging, and contributing to the community.
+web3mentor is an incentive-based learning portal designed to onboard users into the world of Web3 through gamified quests, mentorship programs, and decentralized governance. Leveraging Soulbound Tokens (SBTs) as immutable proof of achievement, SoulPortal rewards users for learning, engaging, and contributing to the community.
 
 # Table of Contents
 1. Features
@@ -53,9 +53,9 @@ Follow these steps to deploy and interact with the platform:
 
 - Clone this repository:
 
-git clone https://github.com/your-repo/soulportal.git
+git clone https://github.com/Hackathonzx/web3mentor.git
 
-cd soulportal
+cd web3mentor
 
 # 4. Installation
 
@@ -85,11 +85,6 @@ Here is the deployed contract addresses:
 - RewardToken deployed to: 0x7EED6B6954bC123BE335b3b2539bCD81E044D526
 - Mentorship deployed to: 0xe9dE092AAfEEF452EA20f84816D96598cD5023c2
 - DAOVoting contract deployed at: 0xb893DAA7F210bE7190e77249ca30281C8c0508DE
-
-Verify deployments on Etherscan (optional):
-
-npx hardhat verify --network <network> <contract-address>
-
 
 # 6. Testing
 Run automated tests:
