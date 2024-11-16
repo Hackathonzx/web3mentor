@@ -14,20 +14,4 @@ module.exports = {
       accounts: [process.env.PRIVATE_KEY],
     },
   },
-  // sourcify: {
-  //   enabled: false
-  // },
-  // etherscan: {
-  //   apiKey: "",
-  //   customChains: [
-  //     {
-  //       network: "TaikoHeklaL2",
-  //       chainId: 167009,
-  //       urls: {
-  //         apiURL: "https://optimism-sepolia.blockscout.com/api",
-  //         browserURL: "https://optimism-sepolia.blockscout.com/",
-  //       }
-  //     }
-  //   ]
-  // }  
 };
