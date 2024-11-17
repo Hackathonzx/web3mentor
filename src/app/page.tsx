@@ -7,7 +7,7 @@ import FilterButton from '../components/buttons';
 
 export default function Home() {
   return (
-    <Box display="flex">
+    <Box display="flex" flexDirection={{ xs: 'column', md: 'row' }}>
       <Sidebar />
       <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
         <Header />
@@ -20,16 +20,16 @@ export default function Home() {
             InputProps={{ style: { color: '#e2e8f0' } }}
           />
         </Box>
-        <Box display="flex" gap={2} mb={2}>
+        <Box display="flex" gap={2} mb={2} flexWrap="wrap">
           <FilterButton label="All" active />
-          <FilterButton label="Defi" active={undefined} />
-          <FilterButton label="Futures" active={undefined} />
-          <FilterButton label="Degen" active={undefined} />
-          <FilterButton label="Jobs" active={undefined} />
-          <FilterButton label="Marketing" active={undefined} />
-          <FilterButton label="Airdrops" active={undefined} />
-          <FilterButton label="Smart contract" active={undefined} />
-          <FilterButton label="Development" active={undefined} />
+          <FilterButton label="Defi" />
+          <FilterButton label="Futures" />
+          <FilterButton label="Degen" />
+          <FilterButton label="Jobs" />
+          <FilterButton label="Marketing" />
+          <FilterButton label="Airdrops" />
+          <FilterButton label="Smart contract" />
+          <FilterButton label="Development" />
         </Box>
         <Grid container spacing={2} mb={2}>
           <Grid item xs={12} sm={6} md={4} lg={3}>
