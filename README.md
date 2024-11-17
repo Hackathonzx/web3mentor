@@ -82,9 +82,20 @@ npx hardhat run ignition/modules/deploy.js --network TaikoHeklaL2
 Here is the deployed contract addresses: 
 
 - SoulboundToken deployed to: 0x2479eb1a719799D2956bB80551d9FA1aF46b0560
+
+   - Link to taikoscan: https://hekla.taikoscan.io/address/0x2479eb1a719799d2956bb80551d9fa1af46b0560
+
 - RewardToken deployed to: 0x7EED6B6954bC123BE335b3b2539bCD81E044D526
+
+   - Link to taikoscan: https://hekla.taikoscan.io/address/0x7eed6b6954bc123be335b3b2539bcd81e044d526
+
 - Mentorship deployed to: 0xe9dE092AAfEEF452EA20f84816D96598cD5023c2
+
+   - Link to taikoscan: https://hekla.taikoscan.io/address/0xe9de092aafeef452ea20f84816d96598cd5023c2
+
 - DAOVoting contract deployed at: 0xb893DAA7F210bE7190e77249ca30281C8c0508DE
+
+   - Link to taikoscan: https://hekla.taikoscan.io/address/0xb893daa7f210be7190e77249ca30281c8c0508de
 
 # 6. Testing
 Run automated tests:
