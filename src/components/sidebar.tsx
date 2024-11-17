@@ -1,5 +1,5 @@
 import React from 'react';
-import { useLocation, Link, BrowserRouter as Router } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 
 const Sidebar = () => {
   const location = useLocation();
@@ -27,10 +27,4 @@ const Sidebar = () => {
   );
 };
 
-const SidebarWithRouter = () => (
-  <Router>
-    <Sidebar />
-  </Router>
-);
-
-export default SidebarWithRouter;
+export default Sidebar;

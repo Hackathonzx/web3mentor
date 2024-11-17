@@ -1,6 +1,5 @@
 "use client";
 
-import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { BrowserRouter as Router } from 'react-router-dom';
@@ -17,11 +16,6 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
-export const metadata: Metadata = {
-  title: "Web3mentor",
-  description: "Web3 education app",
-};
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -35,6 +29,10 @@ export default function RootLayout({
 
   return (
     <html lang="en">
+      <head>
+        <title>Web3mentor</title>
+        <meta name="description" content="Web3 education app" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
