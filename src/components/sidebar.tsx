@@ -1,8 +1,11 @@
+'use client';
+
 import React from 'react';
-import { useLocation, Link } from 'react-router-dom';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 const Sidebar = () => {
-  const location = useLocation();
+  const pathname = usePathname();
 
   const menuItems = [
     { text: 'Classroom', icon: 'fas fa-book', path: '/' },
@@ -17,10 +20,11 @@ const Sidebar = () => {
       {menuItems.map((item) => (
         <Link
           key={item.text}
-          to={item.path}
-          className={`block py-2 px-4 mb-2 rounded ${location.pathname === item.path ? 'bg-purple-500' : 'hover:bg-gray-700'}`}
+          href={item.path}
+          className={`block py-2 px-4 mb-2 rounded ${pathname === item.path ? 'bg-purple-500' : 'hover:bg-gray-700'}`}
         >
-          <i className={`${item.icon} mr-2`}></i> {item.text}
+          <i className={`${item.icon} mr-2`}></i>
+          {item.text}
         </Link>
       ))}
     </div>
