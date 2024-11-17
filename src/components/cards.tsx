@@ -1,7 +1,14 @@
 import React from 'react';
 import { Card as MuiCard, CardContent, CardMedia, Typography, Chip, Box } from '@mui/material';
 
-const Card = ({ title, image, level, details }) => {
+interface CardProps {
+  title: string;
+  image: string;
+  level: string;
+  details: string;
+}
+
+const Card: React.FC<CardProps> = ({ title, image, level, details }) => {
   return (
     <MuiCard sx={{ backgroundColor: '#1e293b', color: '#e2e8f0', borderRadius: 2 }}>
       <CardMedia component="img" height="150" image={image} alt="Course image" />

@@ -1,9 +1,14 @@
 import React from 'react';
 import { Button } from '@mui/material';
 
-const FilterButton = ({ label, active }) => {
+interface FilterButtonProps {
+  label: string;
+  active: boolean;
+}
+
+const FilterButton: React.FC<FilterButtonProps> = ({ label, active }) => {
   return (
-    <Button variant={active ? 'contained' : 'text'} color={active ? 'primary' : 'default'}>
+    <Button variant={active ? 'contained' : 'text'} color={active ? 'primary' : 'inherit'}>
       {label}
     </Button>
   );

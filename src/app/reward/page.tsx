@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, Grid, Typography, Card as MuiCard, CardContent, CardMedia, Button } from '@mui/material';
-import Sidebar from '../../components/sidebar';
-import Header from '../../components/header';
+import Sidebar from '@/components/sidebar';
+import Header from '@/components/header';
 import { motion } from 'framer-motion';
 
 const rewards = [

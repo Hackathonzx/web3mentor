@@ -1,13 +1,21 @@
 import React from 'react';
 import { AppBar, Toolbar, Typography, Button } from '@mui/material';
-import { ethers } from 'ethers';
+import { Web3Provider } from '@ethersproject/providers';
+
+declare global {
+  interface Window {
+    ethereum: {
+      request: (args: { method: string }) => Promise<never>;
+    };
+  }
+}
 
 const Header = () => {
   const connectWallet = async () => {
     if (window.ethereum) {
       try {
         await window.ethereum.request({ method: 'eth_requestAccounts' });
-        const provider = new ethers.providers.Web3Provider(window.ethereum);
+        const provider = new Web3Provider(window.ethereum);
         const signer = provider.getSigner();
         console.log('Wallet connected:', await signer.getAddress());
       } catch (error) {

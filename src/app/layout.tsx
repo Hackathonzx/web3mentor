@@ -1,6 +1,10 @@
+"use client";
+
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import { BrowserRouter as Router } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -23,12 +27,24 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
   return (
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        {isClient ? (
+          <Router>
+            {children}
+          </Router>
+        ) : (
+          children
+        )}
       </body>
     </html>
   );

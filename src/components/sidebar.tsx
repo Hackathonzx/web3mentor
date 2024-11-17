@@ -1,51 +1,36 @@
 import React from 'react';
-import { Drawer, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material';
-import { Book, People, CardGiftcard, Person } from '@mui/icons-material';
-import { Link } from 'react-router-dom';
+import { useLocation, Link, BrowserRouter as Router } from 'react-router-dom';
 
 const Sidebar = () => {
+  const location = useLocation();
+
+  const menuItems = [
+    { text: 'Classroom', icon: 'fas fa-book', path: '/' },
+    { text: 'Community', icon: 'fas fa-users', path: '/community' },
+    { text: 'Reward', icon: 'fas fa-gift', path: '/reward' },
+    { text: 'Profile', icon: 'fas fa-user', path: '/profile' },
+  ];
+
   return (
-    <Drawer
-      variant="permanent"
-      sx={{
-        width: 250,
-        flexShrink: 0,
-        [`& .MuiDrawer-paper`]: { width: 250, boxSizing: 'border-box', backgroundColor: '#1e293b', color: '#e2e8f0' },
-      }}
-    >
-      <div>
-        <Typography variant="h5" sx={{ color: 'purple', padding: 2 }}>
-          Web3mentor
-        </Typography>
-        <List>
-          <ListItem button component={Link} to="/" selected>
-            <ListItemIcon>
-              <Book sx={{ color: '#e2e8f0' }} />
-            </ListItemIcon>
-            <ListItemText primary="Classroom" />
-          </ListItem>
-          <ListItem button component={Link} to="/community">
-            <ListItemIcon>
-              <People sx={{ color: '#e2e8f0' }} />
-            </ListItemIcon>
-            <ListItemText primary="Community" />
-          </ListItem>
-          <ListItem button component={Link} to="/reward">
-            <ListItemIcon>
-              <CardGiftcard sx={{ color: '#e2e8f0' }} />
-            </ListItemIcon>
-            <ListItemText primary="Reward" />
-          </ListItem>
-          <ListItem button component={Link} to="/profile">
-            <ListItemIcon>
-              <Person sx={{ color: '#e2e8f0' }} />
-            </ListItemIcon>
-            <ListItemText primary="Profile" />
-          </ListItem>
-        </List>
-      </div>
-    </Drawer>
+    <div className="sidebar">
+      <h1 className="text-2xl font-bold text-purple-500 mb-8">Web3mentor</h1>
+      {menuItems.map((item) => (
+        <Link
+          key={item.text}
+          to={item.path}
+          className={`block py-2 px-4 mb-2 rounded ${location.pathname === item.path ? 'bg-purple-500' : 'hover:bg-gray-700'}`}
+        >
+          <i className={`${item.icon} mr-2`}></i> {item.text}
+        </Link>
+      ))}
+    </div>
   );
 };
 
-export default Sidebar;
+const SidebarWithRouter = () => (
+  <Router>
+    <Sidebar />
+  </Router>
+);
+
+export default SidebarWithRouter;
