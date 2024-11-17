@@ -6,24 +6,24 @@ import Header from '../../components/header';
 const Community = () => {
   const communityPosts = [
     {
-      title: "Community Post 1",
-      image: "https://via.placeholder.com/250",
-      content: "This is a brief description of community post 1.",
+      title: "How to join a community",
+      image: "/images/community.png",
+      content: "Hi guys, I will be showing you how to join a new community.",
     },
     {
-      title: "Community Post 2",
-      image: "https://via.placeholder.com/250",
-      content: "This is a brief description of community post 2.",
+      title: "Newbie here!",
+      image: "/images/community.png",
+      content: "Hi guys! I'm capy girl, newbie here. I need some course recommendation to keep the ball rolling.",
     },
     {
-      title: "Community Post 3",
-      image: "https://via.placeholder.com/250",
-      content: "This is a brief description of community post 3.",
+      title: "Looking for members in web3 community!",
+      image: "/images/community.png",
+      content: "Hi guys! I just created a new community forum for enthusiasts can you join?.",
     },
     {
-      title: "Community Post 4",
-      image: "https://via.placeholder.com/250",
-      content: "This is a brief description of community post 4.",
+      title: "New hackathons for the community",
+      image: "/images/community.png",
+      content: "Hi guys! Here to announce a new hackathon for the community.",
     },
   ];
 

@@ -8,24 +8,24 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const rewards = [
   {
-    title: "Reward 1",
-    image: "https://via.placeholder.com/250",
-    description: "This is a brief description of reward 1.",
+    title: "Daily learner",
+    image: "/images/rewards.png",
+    description: "This is a brief description of Daily learner.",
   },
   {
-    title: "Reward 2",
-    image: "https://via.placeholder.com/250",
-    description: "This is a brief description of reward 2.",
+    title: "Contributor",
+    image: "/images/rewards.png",
+    description: "This is a brief description of Contributor.",
   },
   {
-    title: "Reward 3",
-    image: "https://via.placeholder.com/250",
-    description: "This is a brief description of reward 3.",
+    title: "Expert",
+    image: "/images/rewards.png",
+    description: "This is a brief description of Expert.",
   },
   {
-    title: "Reward 4",
-    image: "https://via.placeholder.com/250",
-    description: "This is a brief description of reward 4.",
+    title: "Champion",
+    image: "/images/rewards.png",
+    description: "This is a brief description of Champion.",
   },
 ];
 

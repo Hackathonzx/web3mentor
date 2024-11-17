@@ -36,10 +36,10 @@ export default function Home() {
         <Grid container spacing={2} mb={2}>
           <Grid item xs={12} sm={6} md={4} lg={3}>
             <Card
-              title="Course title"
+              title="Welcome to web3 mentor"
               image="https://storage.googleapis.com/a1aa/image/6Dh6B3gebJ0HTaSZC14BmPP6Thhixf5GgyeYsWAQU2Xob8jnA.jpg"
               level="Beginner"
-              details="Course Details"
+              details="click course to learn more and start learning!"
             />
           </Grid>
           <Grid item xs={12} sm={6} md={4} lg={3}>
@@ -47,23 +47,23 @@ export default function Home() {
               title="Introduction to Defi"
               image="https://storage.googleapis.com/a1aa/image/6Dh6B3gebJ0HTaSZC14BmPP6Thhixf5GgyeYsWAQU2Xob8jnA.jpg"
               level="Beginner"
-              details="Course Details"
+              details="click course to learn more and start learning!"
             />
           </Grid>
           <Grid item xs={12} sm={6} md={4} lg={3}>
             <Card
-              title="Course title"
+              title="How does blockchain work?"
               image="https://storage.googleapis.com/a1aa/image/6Dh6B3gebJ0HTaSZC14BmPP6Thhixf5GgyeYsWAQU2Xob8jnA.jpg"
               level="Advanced"
-              details="Course Details"
+              details="click course to learn more and start learning!"
             />
           </Grid>
           <Grid item xs={12} sm={6} md={4} lg={3}>
             <Card
-              title="Course title"
+              title="Testing your contracts"
               image="https://storage.googleapis.com/a1aa/image/6Dh6B3gebJ0HTaSZC14BmPP6Thhixf5GgyeYsWAQU2Xob8jnA.jpg"
               level="Beginner"
-              details="Course Details"
+              details="click course to learn more and start learning!"
             />
           </Grid>
         </Grid>
@@ -72,10 +72,10 @@ export default function Home() {
         <Grid container spacing={2}>
           <Grid item xs={12} sm={6} md={4} lg={3}>
             <Card
-              title="Course title"
+              title="AI and blockchain"
               image="https://storage.googleapis.com/a1aa/image/6Dh6B3gebJ0HTaSZC14BmPP6Thhixf5GgyeYsWAQU2Xob8jnA.jpg"
               level="Beginner"
-              details="Course Details"
+              details="click course to learn more and start learning!"
             />
           </Grid>
           <Grid item xs={12} sm={6} md={4} lg={3}>
@@ -83,23 +83,23 @@ export default function Home() {
               title="Introduction to Defi"
               image="https://storage.googleapis.com/a1aa/image/6Dh6B3gebJ0HTaSZC14BmPP6Thhixf5GgyeYsWAQU2Xob8jnA.jpg"
               level="Beginner"
-              details="Course Details"
+              details="click course to learn more and start learning!"
             />
           </Grid>
           <Grid item xs={12} sm={6} md={4} lg={3}>
             <Card
-              title="Course title"
+              title="What are smart contracts"
               image="https://storage.googleapis.com/a1aa/image/6Dh6B3gebJ0HTaSZC14BmPP6Thhixf5GgyeYsWAQU2Xob8jnA.jpg"
               level="Advanced"
-              details="Course Details"
+              details="click course to learn more and start learning!"
             />
           </Grid>
           <Grid item xs={12} sm={6} md={4} lg={3}>
             <Card
-              title="Course title"
+              title="Rust fundamentals for blockchain"
               image="https://storage.googleapis.com/a1aa/image/6Dh6B3gebJ0HTaSZC14BmPP6Thhixf5GgyeYsWAQU2Xob8jnA.jpg"
               level="Beginner"
-              details="Course Details"
+              details="click course to learn more and start learning!"
             />
           </Grid>
         </Grid>

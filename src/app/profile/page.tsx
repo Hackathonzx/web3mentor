@@ -22,13 +22,13 @@ const Profile = () => {
             <CardMedia
               component="img"
               height="200"
-              image="https://via.placeholder.com/400"
+              image="/images/profile.png"
               alt="Profile image"
             />
             <CardContent>
-              <Typography variant="h6">User Name</Typography>
+              <Typography variant="h6">Cappy Girl</Typography>
               <Typography variant="body2" color="textSecondary">
-                Brief user bio or description goes here.
+                Hi! Cappy girl here. Nothing much to see, just learning about blockchain.
               </Typography>
             </CardContent>
           </MuiCard>
