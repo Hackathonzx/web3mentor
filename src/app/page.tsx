@@ -23,15 +23,15 @@ export default function Home() {
           />
         </Box>
         <Box display="flex" gap={2} mb={2} flexWrap="wrap">
-          <FilterButton label="All" active />
-          <FilterButton label="Defi" />
-          <FilterButton label="Futures" />
-          <FilterButton label="Degen" />
-          <FilterButton label="Jobs" />
-          <FilterButton label="Marketing" />
-          <FilterButton label="Airdrops" />
-          <FilterButton label="Smart contract" />
-          <FilterButton label="Development" />
+          <FilterButton label="All" active={true} />
+          <FilterButton label="Defi" active={false} />
+          <FilterButton label="Futures" active={false} />
+          <FilterButton label="Degen" active={false} />
+          <FilterButton label="Jobs" active={false} />
+          <FilterButton label="Marketing" active={false} />
+          <FilterButton label="Airdrops" active={false} />
+          <FilterButton label="Smart contract" active={false} />
+          <FilterButton label="Development" active={false} />
         </Box>
         <Grid container spacing={2} mb={2}>
           <Grid item xs={12} sm={6} md={4} lg={3}>
